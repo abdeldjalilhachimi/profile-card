@@ -1,0 +1,157 @@
+/* ============== Global Variables =================== */
+/* Typography */
+@import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap);
+/* Colors  */
+/* Media Quiery */
+/* ============== Rest =================== */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  background-color: #19a2ae;
+}
+
+/* Start  Profile */
+.container {
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-position: -50px left 50px;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  /*   .profile__line {
+    position: absolute;
+    bottom: 6.5rem;
+    left: 0;
+    width: 100%;
+    color: $dark-grayish;
+  } */
+}
+
+.container .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  width: 300px;
+  background-color: white;
+  padding: 3rem;
+  position: relative;
+  border-radius: 15px;
+}
+
+.container .profile__title {
+  margin: 9rem 0 0 0;
+  text-align: center !important;
+}
+
+.container .profile__title .profile__name {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: -12px !important;
+  color: #2d3248;
+}
+
+.container .profile__title .profile__name .profile__heighlight {
+  color: #969696;
+}
+
+.container .profile__title .profile__city {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: #969696;
+}
+
+.container .profile__img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .profile__img img {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  border: 6px solid white;
+  z-index: 8;
+}
+
+.container .profile__statistics {
+  width: 100%;
+}
+
+.container .profile__statistics .profile__statistic {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+}
+
+.container .profile__statistics .profile__statistic li {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  color: #2d3248;
+  font-size: 1.1rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .profile__statistics .profile__statistic li span {
+  display: block;
+  margin-top: 0.2rem;
+  color: #969696;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+/* End Profile  */
+/*# sourceMappingURL=main.css.map */
