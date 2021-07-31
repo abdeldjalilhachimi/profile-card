@@ -11,14 +11,11 @@ body {
           box-sizing: border-box;
   font-size: 18px;
   background-color: #19a2ae;
+  overflow: hidden;
 }
 
 /* Start  Profile */
 .container {
-  background-image: url("../images/bg-pattern-top.svg");
-  background-repeat: no-repeat;
-  background-position: -50px left 50px;
-  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +33,34 @@ body {
     width: 100%;
     color: $dark-grayish;
   } */
+}
+
+.container .bg-top {
+  position: absolute;
+  top: -150px;
+  left: -120px;
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  /*  background-position: -50px left 50px; */
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.container .bg-bottom {
+  position: absolute;
+  bottom: -150px;
+  right: -45rem;
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  /*  background-position: -50px left 50px; */
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 
 .container .profile {
@@ -151,6 +176,13 @@ body {
   font-size: 0.6rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 965px) {
+  .container .bg-top,
+  .container .bg-bottom {
+    display: none;
+  }
 }
 
 /* End Profile  */
